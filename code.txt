@@ -1,0 +1,68 @@
+ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (liri-bot)
+Krishna@Mitul MINGW64 ~/desktop/LIRI-Bot (master)
+$ npm init -y
+Wrote to C:\Users\Krishna\desktop\LIRI-Bot\package.json:
+
+{
+  "name": "LIRI-Bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "keys.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitali2190/LIRI-Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitali2190/LIRI-Bot/issues"
+  },
+  "homepage": "https://github.com/mitali2190/LIRI-Bot#readme"
+}
+
+
+
+Krishna@Mitul MINGW64 ~/desktop/LIRI-Bot (master)
+$ np install node-spotify-api
+bash: np: command not found
+
+Krishna@Mitul MINGW64 ~/desktop/LIRI-Bot (master)
+$ npm install node-spotify-api
+npm WARN LIRI-Bot@1.0.0 No description
+
++ node-spotify-api@1.0.7
+added 48 packages in 14.733s
+
+Krishna@Mitul MINGW64 ~/desktop/LIRI-Bot (master)
+$ npm install dotenv moment request
+npm WARN LIRI-Bot@1.0.0 No description
+
++ request@2.88.0
++ dotenv@6.1.0
++ moment@2.22.2
+added 2 packages and updated 1 package in 4.026s
+
+Krishna@Mitul MINGW64 ~/desktop/LIRI-Bot (master)
+$ ^C
+
+Krishna@Mitul MINGW64 ~/desktop/LIRI-Bot (master)
+$

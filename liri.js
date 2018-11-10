@@ -6,11 +6,11 @@ var moment = require("moment");;
 var fs = require("fs");
 
 var args = process.argv.slice(2);
-
+console.log(args)
 // OMDB API with the movie specified
 if (args[0] === "movie-this") {
     if (args.length == 1) {
-        request("http://www.omdbapi.com/", function (error, response, body) {
+        request(`http://www.omdbapi.com/?t=Mr.nobody&apikey=9d3e0401`, function (error, response, body) {
 
             if (!error && response.statusCode === 200) {
                 //console.log(body);
@@ -26,7 +26,7 @@ if (args[0] === "movie-this") {
     }
     else {
 
-        request("http://www.omdbapi.com/" + args[1] + "", function (error, response, body) {
+        request("http://www.omdbapi.com/?t="+ args[1] +" &apikey=9d3e0401", function (error, response, body) {
 
             if (!error && response.statusCode === 200) {
                 //console.log(body);
@@ -45,8 +45,8 @@ if (args[0] === "movie-this") {
 if (args[0] == "spotify-this-song") {
     if (args.length === 1) {
         var spotify = new Spotify({
-            id: "",
-            secret: ""
+            id: "17e3ab4f921e45489456afdefef6f5e5",
+            secret: "9db5b3ae3a354c078cd69d8f3fd83749 "
         });
 
         spotify
@@ -68,8 +68,8 @@ if (args[0] == "spotify-this-song") {
             name = name + " " + name_arr[i];
         }
         var spotify = new Spotify({
-            id: "",
-            secret: ""
+            id: "17e3ab4f921e45489456afdefef6f5e5",
+            secret: "9db5b3ae3a354c078cd69d8f3fd83749 "
         });
 
         spotify
@@ -98,8 +98,8 @@ if (args[0] === "hey") {
         var dataArr = data.split(",");
 
         var spotify = new Spotify({
-            id: "",
-            secret: ""
+            id: "17e3ab4f921e45489456afdefef6f5e5",
+            secret: "9db5b3ae3a354c078cd69d8f3fd83749 "
         });
 
         spotify
